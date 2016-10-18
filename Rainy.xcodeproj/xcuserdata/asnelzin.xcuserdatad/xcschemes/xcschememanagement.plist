@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Rainy-dev.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Rainy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -15,12 +20,12 @@
 		<key>9C84DB7A1DB53A590059E63B</key>
 		<dict>
 			<key>primary</key>
-			<true/>
+			<true />
 		</dict>
 		<key>9CF89D6E1DB61080007619E7</key>
 		<dict>
 			<key>primary</key>
-			<true/>
+			<true />
 		</dict>
 	</dict>
 </dict>

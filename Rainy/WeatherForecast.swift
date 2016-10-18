@@ -5,6 +5,13 @@
 
 import Foundation
 
+
+struct Coordinates {
+    var latitude = 0.0
+    var longitude = 0.0
+}
+
+
 class WeatherForecast {
     let currentWeatherTemp: Double?
     let rainProbability: Double?

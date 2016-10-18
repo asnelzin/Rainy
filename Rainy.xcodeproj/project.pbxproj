@@ -1,1277 +1,580 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>085C0BB86DFFB903ADDDF659</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7A16B4B155A0D521FF3EBE99</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>47818D6AFEEAAE2EA9C38E0F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4C86DDD5CB2EAC7C5629B721</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>57CD0942B412BA485F8C40F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Rainy-dev.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>61F7C40BEE77196306E6F312</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7A16B4B155A0D521FF3EBE99</string>
-				<string>C298855D70E0E8FE19C392E0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>753B26BE366B55572875C325</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A16B4B155A0D521FF3EBE99</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Rainy.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7B69FB5CE728F9121E6E3F39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C298855D70E0E8FE19C392E0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>803978F8AC8D866EDF3353EA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Rainy/Pods-Rainy-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8BBEDB30D3618E5A26D4188F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Rainy-dev.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9B7040999D0A7EA737BF9449</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>47818D6AFEEAAE2EA9C38E0F</string>
-				<string>753B26BE366B55572875C325</string>
-				<string>C38D01816FA9C49C6A6E63E6</string>
-				<string>D24EC2EF59539EC0B12E8598</string>
-				<string>8BBEDB30D3618E5A26D4188F</string>
-				<string>57CD0942B412BA485F8C40F4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB721DB53A590059E63B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9C84DB7D1DB53A590059E63B</string>
-				<string>E135E6D010E252D6C144C8DC</string>
-				<string>E135E14A45138472A4BAB064</string>
-				<string>9C84DB7C1DB53A590059E63B</string>
-				<string>9B7040999D0A7EA737BF9449</string>
-				<string>61F7C40BEE77196306E6F312</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB731DB53A590059E63B</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0800</string>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Alexander Nelzin</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>9C84DB7A1DB53A590059E63B</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>5VG9KZ2WUH</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>9CF89D6E1DB61080007619E7</key>
-					<dict>
-						<key>DevelopmentTeam</key>
-						<string>5VG9KZ2WUH</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>9C84DB761DB53A590059E63B</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>9C84DB721DB53A590059E63B</string>
-			<key>productRefGroup</key>
-			<string>9C84DB7C1DB53A590059E63B</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>9C84DB7A1DB53A590059E63B</string>
-				<string>9CF89D6E1DB61080007619E7</string>
-			</array>
-		</dict>
-		<key>9C84DB761DB53A590059E63B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9C84DB8D1DB53A590059E63B</string>
-				<string>9C84DB8E1DB53A590059E63B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9C84DB771DB53A590059E63B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9C84DB831DB53A590059E63B</string>
-				<string>9C84DB7F1DB53A590059E63B</string>
-				<string>9C84DB811DB53A590059E63B</string>
-				<string>E135EFBC8316A357B36D76CD</string>
-				<string>E135EAF05AF30562FDB9DA9C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9C84DB781DB53A590059E63B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>085C0BB86DFFB903ADDDF659</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9C84DB791DB53A590059E63B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9C84DB8B1DB53A590059E63B</string>
-				<string>9C84DB881DB53A590059E63B</string>
-				<string>9C84DB861DB53A590059E63B</string>
-				<string>E135EE24C5BB6D68BFEC48B9</string>
-				<string>E135E2E4449F66E95E5C93D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9C84DB7A1DB53A590059E63B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9C84DB8F1DB53A590059E63B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>4C86DDD5CB2EAC7C5629B721</string>
-				<string>9C84DB771DB53A590059E63B</string>
-				<string>9C84DB781DB53A590059E63B</string>
-				<string>9C84DB791DB53A590059E63B</string>
-				<string>F9DC0B29D6C63765698FC128</string>
-				<string>803978F8AC8D866EDF3353EA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Rainy</string>
-			<key>productName</key>
-			<string>Rainy</string>
-			<key>productReference</key>
-			<string>9C84DB7B1DB53A590059E63B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>9C84DB7B1DB53A590059E63B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Rainy.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9C84DB7C1DB53A590059E63B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9C84DB7B1DB53A590059E63B</string>
-				<string>9CF89D831DB61080007619E7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB7D1DB53A590059E63B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9CF89D841DB61080007619E7</string>
-				<string>E135E21E96D9A3944C56680D</string>
-				<string>E135E2C711B5E53AB8DAA921</string>
-				<string>9C84DB801DB53A590059E63B</string>
-				<string>9C84DB821DB53A590059E63B</string>
-				<string>9C84DB7E1DB53A590059E63B</string>
-				<string>9C84DB841DB53A590059E63B</string>
-				<string>9C84DB891DB53A590059E63B</string>
-				<string>9C84DB871DB53A590059E63B</string>
-				<string>9C84DB8C1DB53A590059E63B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Rainy</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB7E1DB53A590059E63B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB7F1DB53A590059E63B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB7E1DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C84DB801DB53A590059E63B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CurrentWeatherViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB811DB53A590059E63B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB801DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C84DB821DB53A590059E63B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>HomeWeatherViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB831DB53A590059E63B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB821DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C84DB841DB53A590059E63B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9C84DB851DB53A590059E63B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB851DB53A590059E63B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB861DB53A590059E63B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB841DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C84DB871DB53A590059E63B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB881DB53A590059E63B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB871DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C84DB891DB53A590059E63B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9C84DB8A1DB53A590059E63B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB8A1DB53A590059E63B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB8B1DB53A590059E63B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB891DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C84DB8C1DB53A590059E63B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C84DB8D1DB53A590059E63B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9C84DB8E1DB53A590059E63B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9C84DB8F1DB53A590059E63B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9C84DB901DB53A590059E63B</string>
-				<string>9C84DB911DB53A590059E63B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9C84DB901DB53A590059E63B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C38D01816FA9C49C6A6E63E6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>5VG9KZ2WUH</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Rainy/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.asnelzin.Rainy</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9C84DB911DB53A590059E63B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D24EC2EF59539EC0B12E8598</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>5VG9KZ2WUH</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Rainy/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.asnelzin.Rainy</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9CF89D6E1DB61080007619E7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9CF89D801DB61080007619E7</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9CF89D6F1DB61080007619E7</string>
-				<string>9CF89D701DB61080007619E7</string>
-				<string>9CF89D761DB61080007619E7</string>
-				<string>9CF89D781DB61080007619E7</string>
-				<string>9CF89D7E1DB61080007619E7</string>
-				<string>9CF89D7F1DB61080007619E7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Rainy-dev</string>
-			<key>productName</key>
-			<string>Rainy</string>
-			<key>productReference</key>
-			<string>9CF89D831DB61080007619E7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>9CF89D6F1DB61080007619E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9CF89D701DB61080007619E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9CF89D711DB61080007619E7</string>
-				<string>9CF89D721DB61080007619E7</string>
-				<string>9CF89D731DB61080007619E7</string>
-				<string>9CF89D741DB61080007619E7</string>
-				<string>9CF89D751DB61080007619E7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9CF89D711DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB821DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D721DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB7E1DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D731DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB801DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D741DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E21E96D9A3944C56680D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D751DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E2C711B5E53AB8DAA921</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D761DB61080007619E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7B69FB5CE728F9121E6E3F39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9CF89D781DB61080007619E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9CF89D791DB61080007619E7</string>
-				<string>9CF89D7A1DB61080007619E7</string>
-				<string>9CF89D7B1DB61080007619E7</string>
-				<string>9CF89D7C1DB61080007619E7</string>
-				<string>9CF89D7D1DB61080007619E7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9CF89D791DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB891DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D7A1DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB871DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D7B1DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C84DB841DB53A590059E63B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D7C1DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E14A45138472A4BAB064</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D7D1DB61080007619E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E6D010E252D6C144C8DC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CF89D7E1DB61080007619E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9CF89D7F1DB61080007619E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9CF89D801DB61080007619E7</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9CF89D811DB61080007619E7</string>
-				<string>9CF89D821DB61080007619E7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9CF89D811DB61080007619E7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8BBEDB30D3618E5A26D4188F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>5VG9KZ2WUH</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Info-dev.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>OTHER_SWIFT_FLAGS</key>
-				<string>-DDEVELOPMENT</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.asnelzin.Rainy-dev</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9CF89D821DB61080007619E7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>57CD0942B412BA485F8C40F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>5VG9KZ2WUH</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Info-dev.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>OTHER_SWIFT_FLAGS</key>
-				<string>-DDEVELOPMENT</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.asnelzin.Rainy-dev</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9CF89D831DB61080007619E7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Rainy-dev.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9CF89D841DB61080007619E7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>Info-dev.plist</string>
-			<key>path</key>
-			<string>/Users/asnelzin/dev/Rainy/Info-dev.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;absolute&gt;</string>
-		</dict>
-		<key>C298855D70E0E8FE19C392E0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Rainy_dev.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C38D01816FA9C49C6A6E63E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Rainy.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Rainy/Pods-Rainy.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D24EC2EF59539EC0B12E8598</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Rainy.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Rainy/Pods-Rainy.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E135E14A45138472A4BAB064</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>.gitignore</string>
-			<key>path</key>
-			<string>Rainy/.gitignore</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E135E21E96D9A3944C56680D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Constants.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E135E2C711B5E53AB8DAA921</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>WeatherForecast.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E135E2E4449F66E95E5C93D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E6D010E252D6C144C8DC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E135E6D010E252D6C144C8DC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Podfile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E135EAF05AF30562FDB9DA9C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E2C711B5E53AB8DAA921</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E135EE24C5BB6D68BFEC48B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E14A45138472A4BAB064</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E135EFBC8316A357B36D76CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E135E21E96D9A3944C56680D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F9DC0B29D6C63765698FC128</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Rainy/Pods-Rainy-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>9C84DB731DB53A590059E63B</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		085C0BB86DFFB903ADDDF659 /* Pods_Rainy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A16B4B155A0D521FF3EBE99 /* Pods_Rainy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7B69FB5CE728F9121E6E3F39 /* Pods_Rainy_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C298855D70E0E8FE19C392E0 /* Pods_Rainy_dev.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9C84DB7F1DB53A590059E63B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB7E1DB53A590059E63B /* AppDelegate.swift */; };
+		9C84DB811DB53A590059E63B /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB801DB53A590059E63B /* CurrentWeatherViewController.swift */; };
+		9C84DB831DB53A590059E63B /* HomeWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB821DB53A590059E63B /* HomeWeatherViewController.swift */; };
+		9C84DB861DB53A590059E63B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C84DB841DB53A590059E63B /* Main.storyboard */; };
+		9C84DB881DB53A590059E63B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C84DB871DB53A590059E63B /* Images.xcassets */; };
+		9C84DB8B1DB53A590059E63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C84DB891DB53A590059E63B /* LaunchScreen.storyboard */; };
+		9CF89D711DB61080007619E7 /* HomeWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB821DB53A590059E63B /* HomeWeatherViewController.swift */; };
+		9CF89D721DB61080007619E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB7E1DB53A590059E63B /* AppDelegate.swift */; };
+		9CF89D731DB61080007619E7 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB801DB53A590059E63B /* CurrentWeatherViewController.swift */; };
+		9CF89D741DB61080007619E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135E21E96D9A3944C56680D /* Constants.swift */; };
+		9CF89D751DB61080007619E7 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135E2C711B5E53AB8DAA921 /* WeatherForecast.swift */; };
+		9CF89D791DB61080007619E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C84DB891DB53A590059E63B /* LaunchScreen.storyboard */; };
+		9CF89D7A1DB61080007619E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C84DB871DB53A590059E63B /* Images.xcassets */; };
+		9CF89D7B1DB61080007619E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C84DB841DB53A590059E63B /* Main.storyboard */; };
+		9CF89D7C1DB61080007619E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E135E14A45138472A4BAB064 /* .gitignore */; };
+		9CF89D7D1DB61080007619E7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E135E6D010E252D6C144C8DC /* Podfile */; };
+		E135E2E4449F66E95E5C93D8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E135E6D010E252D6C144C8DC /* Podfile */; };
+		E135EAF05AF30562FDB9DA9C /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135E2C711B5E53AB8DAA921 /* WeatherForecast.swift */; };
+		E135EDBC430FBE8631DA3343 /* Info-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = E135E9FCCBA7DC411128F112 /* Info-dev.plist */; };
+		E135EE24C5BB6D68BFEC48B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E135E14A45138472A4BAB064 /* .gitignore */; };
+		E135EFBC8316A357B36D76CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135E21E96D9A3944C56680D /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47818D6AFEEAAE2EA9C38E0F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		57CD0942B412BA485F8C40F4 /* Pods-Rainy-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainy-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev.release.xcconfig"; sourceTree = "<group>"; };
+		753B26BE366B55572875C325 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7A16B4B155A0D521FF3EBE99 /* Pods_Rainy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBEDB30D3618E5A26D4188F /* Pods-Rainy-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainy-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev.debug.xcconfig"; sourceTree = "<group>"; };
+		9C84DB7B1DB53A590059E63B /* Rainy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C84DB7E1DB53A590059E63B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C84DB801DB53A590059E63B /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
+		9C84DB821DB53A590059E63B /* HomeWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeatherViewController.swift; sourceTree = "<group>"; };
+		9C84DB851DB53A590059E63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C84DB871DB53A590059E63B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C84DB8A1DB53A590059E63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C84DB8C1DB53A590059E63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF89D831DB61080007619E7 /* Rainy-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rainy-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C298855D70E0E8FE19C392E0 /* Pods_Rainy_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainy_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38D01816FA9C49C6A6E63E6 /* Pods-Rainy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rainy/Pods-Rainy.debug.xcconfig"; sourceTree = "<group>"; };
+		D24EC2EF59539EC0B12E8598 /* Pods-Rainy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rainy/Pods-Rainy.release.xcconfig"; sourceTree = "<group>"; };
+		E135E14A45138472A4BAB064 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = Rainy/.gitignore; sourceTree = "<group>"; };
+		E135E21E96D9A3944C56680D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E135E2C711B5E53AB8DAA921 /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		E135E6D010E252D6C144C8DC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E135E9FCCBA7DC411128F112 /* Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "Info-dev.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C84DB781DB53A590059E63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085C0BB86DFFB903ADDDF659 /* Pods_Rainy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF89D761DB61080007619E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B69FB5CE728F9121E6E3F39 /* Pods_Rainy_dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61F7C40BEE77196306E6F312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A16B4B155A0D521FF3EBE99 /* Pods_Rainy.framework */,
+				C298855D70E0E8FE19C392E0 /* Pods_Rainy_dev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B7040999D0A7EA737BF9449 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47818D6AFEEAAE2EA9C38E0F /* Pods.debug.xcconfig */,
+				753B26BE366B55572875C325 /* Pods.release.xcconfig */,
+				C38D01816FA9C49C6A6E63E6 /* Pods-Rainy.debug.xcconfig */,
+				D24EC2EF59539EC0B12E8598 /* Pods-Rainy.release.xcconfig */,
+				8BBEDB30D3618E5A26D4188F /* Pods-Rainy-dev.debug.xcconfig */,
+				57CD0942B412BA485F8C40F4 /* Pods-Rainy-dev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C84DB721DB53A590059E63B = {
+			isa = PBXGroup;
+			children = (
+				9C84DB7D1DB53A590059E63B /* Rainy */,
+				E135E6D010E252D6C144C8DC /* Podfile */,
+				E135E14A45138472A4BAB064 /* .gitignore */,
+				9C84DB7C1DB53A590059E63B /* Products */,
+				9B7040999D0A7EA737BF9449 /* Pods */,
+				61F7C40BEE77196306E6F312 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C84DB7C1DB53A590059E63B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C84DB7B1DB53A590059E63B /* Rainy.app */,
+				9CF89D831DB61080007619E7 /* Rainy-dev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C84DB7D1DB53A590059E63B /* Rainy */ = {
+			isa = PBXGroup;
+			children = (
+				E135E21E96D9A3944C56680D /* Constants.swift */,
+				E135E2C711B5E53AB8DAA921 /* WeatherForecast.swift */,
+				9C84DB801DB53A590059E63B /* CurrentWeatherViewController.swift */,
+				9C84DB821DB53A590059E63B /* HomeWeatherViewController.swift */,
+				9C84DB7E1DB53A590059E63B /* AppDelegate.swift */,
+				9C84DB841DB53A590059E63B /* Main.storyboard */,
+				9C84DB891DB53A590059E63B /* LaunchScreen.storyboard */,
+				9C84DB871DB53A590059E63B /* Images.xcassets */,
+				9C84DB8C1DB53A590059E63B /* Info.plist */,
+				E135E9FCCBA7DC411128F112 /* Info-dev.plist */,
+			);
+			path = Rainy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C84DB7A1DB53A590059E63B /* Rainy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C84DB8F1DB53A590059E63B /* Build configuration list for PBXNativeTarget "Rainy" */;
+			buildPhases = (
+				4C86DDD5CB2EAC7C5629B721 /* [CP] Check Pods Manifest.lock */,
+				9C84DB771DB53A590059E63B /* Sources */,
+				9C84DB781DB53A590059E63B /* Frameworks */,
+				9C84DB791DB53A590059E63B /* Resources */,
+				F9DC0B29D6C63765698FC128 /* [CP] Embed Pods Frameworks */,
+				803978F8AC8D866EDF3353EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rainy;
+			productName = Rainy;
+			productReference = 9C84DB7B1DB53A590059E63B /* Rainy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CF89D6E1DB61080007619E7 /* Rainy-dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CF89D801DB61080007619E7 /* Build configuration list for PBXNativeTarget "Rainy-dev" */;
+			buildPhases = (
+				9CF89D6F1DB61080007619E7 /* [CP] Check Pods Manifest.lock */,
+				9CF89D701DB61080007619E7 /* Sources */,
+				9CF89D761DB61080007619E7 /* Frameworks */,
+				9CF89D781DB61080007619E7 /* Resources */,
+				9CF89D7E1DB61080007619E7 /* [CP] Embed Pods Frameworks */,
+				9CF89D7F1DB61080007619E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rainy-dev";
+			productName = Rainy;
+			productReference = 9CF89D831DB61080007619E7 /* Rainy-dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C84DB731DB53A590059E63B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Alexander Nelzin";
+				TargetAttributes = {
+					9C84DB7A1DB53A590059E63B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5VG9KZ2WUH;
+						ProvisioningStyle = Automatic;
+					};
+					9CF89D6E1DB61080007619E7 = {
+						DevelopmentTeam = 5VG9KZ2WUH;
+					};
+				};
+			};
+			buildConfigurationList = 9C84DB761DB53A590059E63B /* Build configuration list for PBXProject "Rainy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C84DB721DB53A590059E63B;
+			productRefGroup = 9C84DB7C1DB53A590059E63B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C84DB7A1DB53A590059E63B /* Rainy */,
+				9CF89D6E1DB61080007619E7 /* Rainy-dev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C84DB791DB53A590059E63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C84DB8B1DB53A590059E63B /* LaunchScreen.storyboard in Resources */,
+				9C84DB881DB53A590059E63B /* Images.xcassets in Resources */,
+				9C84DB861DB53A590059E63B /* Main.storyboard in Resources */,
+				E135EE24C5BB6D68BFEC48B9 /* .gitignore in Resources */,
+				E135E2E4449F66E95E5C93D8 /* Podfile in Resources */,
+				E135EDBC430FBE8631DA3343 /* Info-dev.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF89D781DB61080007619E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF89D791DB61080007619E7 /* LaunchScreen.storyboard in Resources */,
+				9CF89D7A1DB61080007619E7 /* Images.xcassets in Resources */,
+				9CF89D7B1DB61080007619E7 /* Main.storyboard in Resources */,
+				9CF89D7C1DB61080007619E7 /* .gitignore in Resources */,
+				9CF89D7D1DB61080007619E7 /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C86DDD5CB2EAC7C5629B721 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		803978F8AC8D866EDF3353EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainy/Pods-Rainy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF89D6F1DB61080007619E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF89D7E1DB61080007619E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF89D7F1DB61080007619E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9DC0B29D6C63765698FC128 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainy/Pods-Rainy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C84DB771DB53A590059E63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C84DB831DB53A590059E63B /* HomeWeatherViewController.swift in Sources */,
+				9C84DB7F1DB53A590059E63B /* AppDelegate.swift in Sources */,
+				9C84DB811DB53A590059E63B /* CurrentWeatherViewController.swift in Sources */,
+				E135EFBC8316A357B36D76CD /* Constants.swift in Sources */,
+				E135EAF05AF30562FDB9DA9C /* WeatherForecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF89D701DB61080007619E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF89D711DB61080007619E7 /* HomeWeatherViewController.swift in Sources */,
+				9CF89D721DB61080007619E7 /* AppDelegate.swift in Sources */,
+				9CF89D731DB61080007619E7 /* CurrentWeatherViewController.swift in Sources */,
+				9CF89D741DB61080007619E7 /* Constants.swift in Sources */,
+				9CF89D751DB61080007619E7 /* WeatherForecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C84DB841DB53A590059E63B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C84DB851DB53A590059E63B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C84DB891DB53A590059E63B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C84DB8A1DB53A590059E63B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C84DB8D1DB53A590059E63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C84DB8E1DB53A590059E63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C84DB901DB53A590059E63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38D01816FA9C49C6A6E63E6 /* Pods-Rainy.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VG9KZ2WUH;
+				INFOPLIST_FILE = Rainy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asnelzin.Rainy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9C84DB911DB53A590059E63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24EC2EF59539EC0B12E8598 /* Pods-Rainy.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VG9KZ2WUH;
+				INFOPLIST_FILE = Rainy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asnelzin.Rainy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9CF89D811DB61080007619E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBEDB30D3618E5A26D4188F /* Pods-Rainy-dev.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VG9KZ2WUH;
+				INFOPLIST_FILE = "$(SRCROOT)/Rainy/Info-dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asnelzin.Rainy-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9CF89D821DB61080007619E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57CD0942B412BA485F8C40F4 /* Pods-Rainy-dev.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VG9KZ2WUH;
+				INFOPLIST_FILE = "$(SRCROOT)/Rainy/Info-dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.asnelzin.Rainy-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C84DB761DB53A590059E63B /* Build configuration list for PBXProject "Rainy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C84DB8D1DB53A590059E63B /* Debug */,
+				9C84DB8E1DB53A590059E63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C84DB8F1DB53A590059E63B /* Build configuration list for PBXNativeTarget "Rainy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C84DB901DB53A590059E63B /* Debug */,
+				9C84DB911DB53A590059E63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CF89D801DB61080007619E7 /* Build configuration list for PBXNativeTarget "Rainy-dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CF89D811DB61080007619E7 /* Debug */,
+				9CF89D821DB61080007619E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C84DB731DB53A590059E63B /* Project object */;
+}

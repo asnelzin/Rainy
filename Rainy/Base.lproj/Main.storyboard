@@ -23,6 +23,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iT-fB-mW1" userLabel="Reload Button">
+                                <state key="normal" title="Reload"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wRp-tp-Lle" userLabel="Reload Activity Indicator"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yTC-Rl-qrs" userLabel="Weather Image">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="HZe-tj-LNv"/>
@@ -44,13 +48,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iT-fB-mW1" userLabel="Reload Button">
-                                <state key="normal" title="Reload"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yTC-Rl-qrs" firstAttribute="top" secondItem="NWc-oS-xTj" secondAttribute="bottom" constant="8" id="2e8-rv-iOB"/>
                             <constraint firstItem="3iT-fB-mW1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="2qp-u2-Rj2"/>
                             <constraint firstItem="4LV-ho-ENJ" firstAttribute="centerY" secondItem="3JT-qb-kdQ" secondAttribute="centerY" id="3yW-fM-SXn"/>
                             <constraint firstAttribute="trailing" secondItem="yTC-Rl-qrs" secondAttribute="trailing" id="8yn-GO-pQO"/>
@@ -59,8 +59,11 @@
                             <constraint firstAttribute="trailing" secondItem="NWc-oS-xTj" secondAttribute="trailing" constant="8" id="HGU-4b-3by"/>
                             <constraint firstAttribute="trailing" secondItem="3JT-qb-kdQ" secondAttribute="trailing" constant="8" id="Hgw-gH-8oy"/>
                             <constraint firstItem="3JT-qb-kdQ" firstAttribute="top" secondItem="yTC-Rl-qrs" secondAttribute="bottom" constant="8" id="HiM-DN-Ana"/>
+                            <constraint firstItem="wRp-tp-Lle" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="W6Y-A8-dMY"/>
                             <constraint firstItem="NWc-oS-xTj" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="X7k-zX-0xv"/>
+                            <constraint firstItem="wRp-tp-Lle" firstAttribute="top" secondItem="NWc-oS-xTj" secondAttribute="bottom" constant="8" id="XEG-6H-XlY"/>
                             <constraint firstItem="NWc-oS-xTj" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="8" id="af3-MJ-yaY"/>
+                            <constraint firstItem="yTC-Rl-qrs" firstAttribute="top" secondItem="wRp-tp-Lle" secondAttribute="bottom" constant="8" id="bDJ-5j-uDz"/>
                             <constraint firstItem="E9A-pK-ZOk" firstAttribute="centerY" secondItem="3JT-qb-kdQ" secondAttribute="centerY" id="gDl-Wg-tvV"/>
                             <constraint firstItem="yTC-Rl-qrs" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="jEY-PS-aSf"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="3iT-fB-mW1" secondAttribute="bottom" constant="8" id="sDR-10-l97"/>
