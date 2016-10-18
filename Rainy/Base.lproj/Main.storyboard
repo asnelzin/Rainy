@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Current-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="Current" id="9pv-A4-QxB" customClass="CurrentWeatherViewController" customModule="Rainy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В СПб как всегда тепло и солнечно!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWc-oS-xTj" userLabel="Title Label">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yTC-Rl-qrs" userLabel="Weather Image">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="HZe-tj-LNv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3JT-qb-kdQ" userLabel="WeatherIcon Image">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9hv-jC-1lD"/>
+                                    <constraint firstAttribute="height" constant="60" id="zgL-GO-YJI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-ho-ENJ" userLabel="RainProbability Label">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-20 ℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9A-pK-ZOk" userLabel="Temperature Label">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iT-fB-mW1" userLabel="Reload Button">
+                                <state key="normal" title="Reload"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yTC-Rl-qrs" firstAttribute="top" secondItem="NWc-oS-xTj" secondAttribute="bottom" constant="8" id="2e8-rv-iOB"/>
+                            <constraint firstItem="3iT-fB-mW1" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="2qp-u2-Rj2"/>
+                            <constraint firstItem="4LV-ho-ENJ" firstAttribute="centerY" secondItem="3JT-qb-kdQ" secondAttribute="centerY" id="3yW-fM-SXn"/>
+                            <constraint firstAttribute="trailing" secondItem="yTC-Rl-qrs" secondAttribute="trailing" id="8yn-GO-pQO"/>
+                            <constraint firstItem="3JT-qb-kdQ" firstAttribute="leading" secondItem="4LV-ho-ENJ" secondAttribute="trailing" constant="8" id="Bwl-ih-9XQ"/>
+                            <constraint firstItem="E9A-pK-ZOk" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="8" id="GFr-fK-9jn"/>
+                            <constraint firstAttribute="trailing" secondItem="NWc-oS-xTj" secondAttribute="trailing" constant="8" id="HGU-4b-3by"/>
+                            <constraint firstAttribute="trailing" secondItem="3JT-qb-kdQ" secondAttribute="trailing" constant="8" id="Hgw-gH-8oy"/>
+                            <constraint firstItem="3JT-qb-kdQ" firstAttribute="top" secondItem="yTC-Rl-qrs" secondAttribute="bottom" constant="8" id="HiM-DN-Ana"/>
+                            <constraint firstItem="NWc-oS-xTj" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="X7k-zX-0xv"/>
+                            <constraint firstItem="NWc-oS-xTj" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="8" id="af3-MJ-yaY"/>
+                            <constraint firstItem="E9A-pK-ZOk" firstAttribute="centerY" secondItem="3JT-qb-kdQ" secondAttribute="centerY" id="gDl-Wg-tvV"/>
+                            <constraint firstItem="yTC-Rl-qrs" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="jEY-PS-aSf"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="3iT-fB-mW1" secondAttribute="bottom" constant="8" id="sDR-10-l97"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Здесь" image="first" id="acW-dT-cKf" userLabel="Here TabItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="-415.14242878560725"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController title="Home" id="8rJ-Kc-sve" customClass="HomeWeatherViewController" customModule="Rainy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Дом" image="second" id="cPa-gy-q4n" userLabel="Home TabItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="385"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
