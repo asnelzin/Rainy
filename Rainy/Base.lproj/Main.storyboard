@@ -18,49 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ojM-wa-bHp">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="MJC-rW-mV3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z88-dn-ZF8">
-                                            <subviews>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="EmV-pn-8rV"/>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refreshing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-p8-e5M">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstItem="EmV-pn-8rV" firstAttribute="centerY" secondItem="Z88-dn-ZF8" secondAttribute="centerY" id="4sc-gv-4Vy"/>
-                                                <constraint firstItem="AvF-p8-e5M" firstAttribute="centerX" secondItem="Z88-dn-ZF8" secondAttribute="centerX" id="D6o-9A-TO9"/>
-                                                <constraint firstItem="EmV-pn-8rV" firstAttribute="leading" secondItem="Z88-dn-ZF8" secondAttribute="leading" constant="35" id="siW-fp-ZjD"/>
-                                                <constraint firstItem="AvF-p8-e5M" firstAttribute="centerY" secondItem="Z88-dn-ZF8" secondAttribute="centerY" id="w8g-Na-URq"/>
-                                                <constraint firstAttribute="height" constant="50" id="wOk-9S-mql"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="Z88-dn-ZF8" secondAttribute="trailing" id="To8-pR-Yfq"/>
-                                        <constraint firstItem="Z88-dn-ZF8" firstAttribute="leading" secondItem="MJC-rW-mV3" secondAttribute="leading" id="c1J-DA-Pmc"/>
-                                        <constraint firstItem="Z88-dn-ZF8" firstAttribute="top" secondItem="MJC-rW-mV3" secondAttribute="top" id="og7-U3-YVE"/>
-                                    </constraints>
-                                </view>
-                            </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXc-kQ-ceQ">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-Rv-qSE" userLabel="Content View">
+                                        <color key="backgroundColor" red="0.92941176469999998" green="0.59999999999999998" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dWk-Rv-qSE" firstAttribute="centerX" secondItem="PXc-kQ-ceQ" secondAttribute="centerX" id="1f1-D4-e03"/>
+                                    <constraint firstItem="dWk-Rv-qSE" firstAttribute="top" secondItem="PXc-kQ-ceQ" secondAttribute="top" id="Geq-e7-TNh"/>
+                                    <constraint firstAttribute="trailing" secondItem="dWk-Rv-qSE" secondAttribute="trailing" id="VUm-FM-Eto"/>
+                                    <constraint firstAttribute="bottom" secondItem="dWk-Rv-qSE" secondAttribute="bottom" id="X7C-1D-eoY"/>
+                                    <constraint firstItem="dWk-Rv-qSE" firstAttribute="centerY" secondItem="PXc-kQ-ceQ" secondAttribute="centerY" id="Zw9-Op-n70"/>
+                                    <constraint firstItem="dWk-Rv-qSE" firstAttribute="leading" secondItem="PXc-kQ-ceQ" secondAttribute="leading" id="bdc-dX-wCN"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ojM-wa-bHp" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="88w-PP-fMK"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ojM-wa-bHp" secondAttribute="bottom" id="9xp-Nv-ZeM"/>
-                            <constraint firstAttribute="trailing" secondItem="ojM-wa-bHp" secondAttribute="trailing" id="PDc-hK-oSe"/>
-                            <constraint firstItem="ojM-wa-bHp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="vhY-UO-Lhu"/>
+                            <constraint firstItem="PXc-kQ-ceQ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="GHz-E7-A2V"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="PXc-kQ-ceQ" secondAttribute="bottom" id="MJP-w1-OPI"/>
+                            <constraint firstItem="PXc-kQ-ceQ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="hIg-KO-oda"/>
+                            <constraint firstAttribute="trailing" secondItem="PXc-kQ-ceQ" secondAttribute="trailing" id="wpg-ej-ORE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Здесь" image="first" id="acW-dT-cKf" userLabel="Here TabItem"/>
+                    <tabBarItem key="tabBarItem" title="Current" image="Near Me-50" id="acW-dT-cKf" userLabel="Here TabItem"/>
+                    <connections>
+                        <outlet property="scrollView" destination="PXc-kQ-ceQ" id="7Kc-6T-zaK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +66,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZ8-B9-rJQ">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbu-Os-dWg" userLabel="Content View">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.1657483089" green="0.90588235289999997" blue="0.34484305589999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -96,13 +81,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="yZ8-B9-rJQ" secondAttribute="bottom" id="1aj-Ef-ldD"/>
+                            <constraint firstItem="yZ8-B9-rJQ" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="1jh-rN-lMA"/>
                             <constraint firstAttribute="trailing" secondItem="yZ8-B9-rJQ" secondAttribute="trailing" id="Bzy-9i-Py2"/>
-                            <constraint firstItem="yZ8-B9-rJQ" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="Vi0-4W-gJe"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="yZ8-B9-rJQ" secondAttribute="bottom" id="mRt-9H-lu5"/>
                             <constraint firstItem="yZ8-B9-rJQ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="xdp-Jy-PB5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Дом" image="second" id="cPa-gy-q4n" userLabel="Home TabItem"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-50" id="cPa-gy-q4n" userLabel="Home TabItem"/>
                     <connections>
                         <outlet property="scrollView" destination="yZ8-B9-rJQ" id="xRG-eI-zxG"/>
                     </connections>
@@ -132,7 +117,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Home-50" width="25" height="25"/>
+        <image name="Near Me-50" width="25" height="25"/>
     </resources>
 </document>
