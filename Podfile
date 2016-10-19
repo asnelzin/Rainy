@@ -5,11 +5,13 @@ use_frameworks!
 target 'Rainy-dev' do
     pod 'SwiftyJSON', '~> 3.1.1'
     pod 'Alamofire', '~> 4.0'
+    pod 'ChameleonFramework'
 end
 
 target 'Rainy' do
     pod 'SwiftyJSON', '~> 3.1.1'
     pod 'Alamofire', '~> 4.0'
+    pod 'ChameleonFramework'
 end
 
 post_install do |installer|

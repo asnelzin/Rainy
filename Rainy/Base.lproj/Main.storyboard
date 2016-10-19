@@ -21,7 +21,70 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXc-kQ-ceQ">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-Rv-qSE" userLabel="Content View">
-                                        <color key="backgroundColor" red="0.92941176469999998" green="0.59999999999999998" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather Icon" translatesAutoresizingMaskIntoConstraints="NO" id="P15-0l-Yhr">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="IYK-gZ-epM"/>
+                                                    <constraint firstAttribute="width" constant="180" id="SZ0-46-hts"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco, CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtJ-hq-DqP">
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thermometer" translatesAutoresizingMaskIntoConstraints="NO" id="vTO-pE-ziN">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="O2u-cJ-Kja"/>
+                                                    <constraint firstAttribute="width" constant="20" id="vp6-ew-uMI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wind" translatesAutoresizingMaskIntoConstraints="NO" id="2tZ-Hs-HHu">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Xpa-h3-vBS"/>
+                                                    <constraint firstAttribute="width" constant="40" id="qgc-oX-kUJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="e0w-h3-jdQ">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="3XJ-bo-nm5"/>
+                                                    <constraint firstAttribute="height" constant="35" id="PW0-6y-xVi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQj-0a-1nv">
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oh-E3-NvP">
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5b-Qj-DbE">
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2tZ-Hs-HHu" firstAttribute="top" secondItem="HtJ-hq-DqP" secondAttribute="bottom" constant="70" id="73M-Dm-G10"/>
+                                            <constraint firstItem="9Oh-E3-NvP" firstAttribute="centerY" secondItem="YQj-0a-1nv" secondAttribute="centerY" id="7RE-Aw-etA"/>
+                                            <constraint firstItem="vTO-pE-ziN" firstAttribute="centerY" secondItem="2tZ-Hs-HHu" secondAttribute="centerY" id="7fa-pC-F0I"/>
+                                            <constraint firstItem="vTO-pE-ziN" firstAttribute="leading" secondItem="dWk-Rv-qSE" secondAttribute="leading" constant="30" id="94C-Sc-Yn8"/>
+                                            <constraint firstItem="9Oh-E3-NvP" firstAttribute="centerX" secondItem="e0w-h3-jdQ" secondAttribute="centerX" id="AGb-gt-BvO"/>
+                                            <constraint firstItem="YQj-0a-1nv" firstAttribute="top" secondItem="2tZ-Hs-HHu" secondAttribute="bottom" constant="8" id="Eab-5c-Ucd"/>
+                                            <constraint firstItem="P15-0l-Yhr" firstAttribute="centerX" secondItem="dWk-Rv-qSE" secondAttribute="centerX" id="Lo1-b1-YjP"/>
+                                            <constraint firstItem="YQj-0a-1nv" firstAttribute="centerX" secondItem="dWk-Rv-qSE" secondAttribute="centerX" id="YVY-Ly-sq4"/>
+                                            <constraint firstItem="2tZ-Hs-HHu" firstAttribute="centerX" secondItem="dWk-Rv-qSE" secondAttribute="centerX" id="bD8-d4-gr2"/>
+                                            <constraint firstItem="e0w-h3-jdQ" firstAttribute="centerY" secondItem="2tZ-Hs-HHu" secondAttribute="centerY" id="czJ-uN-fEa"/>
+                                            <constraint firstItem="P15-0l-Yhr" firstAttribute="top" secondItem="dWk-Rv-qSE" secondAttribute="top" constant="60" id="gLZ-op-gAg"/>
+                                            <constraint firstItem="L5b-Qj-DbE" firstAttribute="centerX" secondItem="vTO-pE-ziN" secondAttribute="centerX" id="ipO-L0-BUH"/>
+                                            <constraint firstItem="HtJ-hq-DqP" firstAttribute="top" secondItem="P15-0l-Yhr" secondAttribute="bottom" constant="40" id="meE-OF-Ech"/>
+                                            <constraint firstItem="L5b-Qj-DbE" firstAttribute="centerY" secondItem="YQj-0a-1nv" secondAttribute="centerY" id="ptV-2b-he1"/>
+                                            <constraint firstAttribute="trailing" secondItem="e0w-h3-jdQ" secondAttribute="trailing" constant="30" id="uo8-3B-17e"/>
+                                            <constraint firstItem="HtJ-hq-DqP" firstAttribute="centerX" secondItem="dWk-Rv-qSE" secondAttribute="centerX" id="vcj-eR-NTT"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -44,7 +107,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Current" image="Near Me-50" id="acW-dT-cKf" userLabel="Here TabItem"/>
                     <connections>
+                        <outlet property="locationLabel" destination="HtJ-hq-DqP" id="3ub-jU-91g"/>
+                        <outlet property="rainLabel" destination="9Oh-E3-NvP" id="VxD-r1-4Np"/>
                         <outlet property="scrollView" destination="PXc-kQ-ceQ" id="7Kc-6T-zaK"/>
+                        <outlet property="tempLabel" destination="L5b-Qj-DbE" id="deu-7m-lpM"/>
+                        <outlet property="weatheImage" destination="P15-0l-Yhr" id="C8m-D9-6wM"/>
+                        <outlet property="windLabel" destination="YQj-0a-1nv" id="JWN-Qi-xA4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -119,5 +187,9 @@
     <resources>
         <image name="Home-50" width="25" height="25"/>
         <image name="Near Me-50" width="25" height="25"/>
+        <image name="Thermometer" width="16" height="35"/>
+        <image name="Umbrella" width="40" height="31"/>
+        <image name="Weather Icon" width="188" height="187"/>
+        <image name="Wind" width="40" height="26"/>
     </resources>
 </document>
