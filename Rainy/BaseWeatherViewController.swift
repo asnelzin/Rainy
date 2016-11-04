@@ -17,20 +17,26 @@ class BaseWeatherViewController: UIViewController {
     var coordinates = Coordinates()
     var currentForecast: WeatherForecast?
     
-    var locationManager = CLLocationManager()
-    var refreshControl = UIRefreshControl()
+    lazy var locationManager: CLLocationManager = {
+        let locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        return locationManager
+    }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setupLocationManager()
-        setupRefreshControl()
-    }
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(updateCurrentForecast), for: .valueChanged)
+        return refreshControl
+    }()
 }
 
 // MARK: - Update
 extension BaseWeatherViewController {
     func updateCurrentForecast() {
+        print("Updating...")
         let URL = "http://api.openweathermap.org/data/2.5/weather?lat=\(coordinates.latitude)&lon=\(coordinates.longitude)&APPID=\(Constants.apiKey)"
         
         Alamofire.request(URL).responseJSON { response in
@@ -44,33 +50,18 @@ extension BaseWeatherViewController {
 
 // MARK: - CLLocationManagerDelegate
 extension BaseWeatherViewController: CLLocationManagerDelegate {
-    func setupLocationManager() {
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
-    }
-    
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("didFailWithError %@", error)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let currentLocation: CLLocation = locations[0]
-        if (!currentLocation.isEqual(nil)) {
+        print("Get locations")
+        let currentLocation: CLLocation = locations[0] // Unsafe
+        if (!currentLocation.isEqual(nil)) { // == nil
             coordinates = Coordinates(
                 latitude: currentLocation.coordinate.latitude,
                 longitude: currentLocation.coordinate.longitude
             )
-            updateCurrentForecast()
         }
-        locationManager.stopUpdatingLocation()
-    }
-}
-
-// MARK: - UIRefreshControl
-extension BaseWeatherViewController {
-    func setupRefreshControl() {
-        refreshControl.addTarget(self, action: #selector(updateCurrentForecast), for: .valueChanged)
     }
 }
