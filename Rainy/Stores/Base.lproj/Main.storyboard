@@ -22,10 +22,10 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-Rv-qSE" userLabel="Content View">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="P15-0l-Yhr">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="P15-0l-Yhr">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="IYK-gZ-epM"/>
-                                                    <constraint firstAttribute="width" constant="180" id="SZ0-46-hts"/>
+                                                    <constraint firstAttribute="width" constant="200" id="SZ0-46-hts"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco, CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtJ-hq-DqP">
@@ -136,9 +136,9 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91G-eO-MWF" userLabel="Content View">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-R2-Q7a">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-R2-Q7a">
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="180" id="nvv-eW-zKN"/>
+                                                    <constraint firstAttribute="width" constant="200" id="nvv-eW-zKN"/>
                                                     <constraint firstAttribute="height" constant="180" id="uV5-bg-j2r"/>
                                                 </constraints>
                                             </imageView>
@@ -255,8 +255,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cloudy" width="165" height="147"/>
         <image name="current" width="25" height="25"/>
-        <image name="default" width="188" height="187"/>
         <image name="home" width="25" height="25"/>
         <image name="rain-probability" width="40" height="31"/>
         <image name="themperature" width="16" height="35"/>
