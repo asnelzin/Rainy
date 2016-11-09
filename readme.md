@@ -7,12 +7,15 @@ This application was made during iOS-course in VK.com University.
 
 ## TODO
 
-- [ ] Improve design
+- [x] Add https://openweathermap.org/ API
+- [x] Add pull-to-refresh
+- [x] Add LocationManager
 - [ ] Implement basic functionality
+- [ ] Improve design
 - [ ] Make an app icon
 - [ ] Add weekly forecast
 
 
 ## License
 
-MIT © [Alexander Nelzin](https://asnelzin.com)
+MIT © [Alexander Nelzin](http://asnelzin.ru)
