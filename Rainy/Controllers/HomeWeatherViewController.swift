@@ -36,8 +36,8 @@ extension HomeWeatherViewController {
     override func updateUI() {
         locationLabel.text = currentForecast!.location
         
-        tempLabel.text = "\(round(currentForecast!.temperature))"
-        rainLabel.text = "\(round(currentForecast!.rainProbability))"
-        windLabel.text = "\(round(currentForecast!.wind))"
+        tempLabel.text = "\(lround(currentForecast!.temperature))"
+        rainLabel.text = "\(lround(currentForecast!.rainProbability))"
+        windLabel.text = "\(lround(currentForecast!.wind))"
     }
 }

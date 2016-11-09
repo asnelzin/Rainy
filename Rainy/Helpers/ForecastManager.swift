@@ -56,18 +56,7 @@ class OpenWeatherMapForecastManager {
             let responseJSON = JSON(response.result.value)
             print(responseJSON)
             
-            let temp = responseJSON["main"]["temp"].double!
-            
-            var rainProbability: Double?
-            if let rainDict = responseJSON["rain"].dictionary {
-                rainProbability = rainDict["3h"]?.double
-            } else {
-                rainProbability = -1
-            }
-            let location = responseJSON["name"].string!
-            let wind = responseJSON["wind"]["speed"].double!
-            let weatherForecast = WeatherForecast(temperature: temp, rainProbability: rainProbability!, location: location, wind: wind)
-            self.delegate?.didUpdateForecast(self, forecast: weatherForecast)
+            self.delegate?.didUpdateForecast(self, forecast: self.parseJSON(responseJSON))
         }
     }
     
@@ -83,19 +72,23 @@ class OpenWeatherMapForecastManager {
             let responseJSON = JSON(response.result.value)
             print(responseJSON)
             
-            let temp = responseJSON["main"]["temp"].double!
-            
-            var rainProbability: Double?
-            if let rainDict = responseJSON["rain"].dictionary {
-                rainProbability = rainDict["3h"]?.double
-            } else {
-                rainProbability = -1
-            }
-            let location = responseJSON["name"].string!
-            let wind = responseJSON["wind"]["speed"].double!
-            let weatherForecast = WeatherForecast(temperature: temp, rainProbability: rainProbability!, location: location, wind: wind)
-            self.delegate?.didUpdateForecast(self, forecast: weatherForecast)
+            self.delegate?.didUpdateForecast(self, forecast: self.parseJSON(responseJSON))
         }
+    }
+    
+    private func parseJSON(_ json: JSON) -> WeatherForecast {
+        let temp = json["main"]["temp"].double!
+        
+        var rainProbability: Double?
+        if let rainDict = json["rain"].dictionary {
+            rainProbability = rainDict["3h"]?.double
+        } else {
+            rainProbability = -1
+        }
+        let location = json["name"].string!
+        let wind = json["wind"]["speed"].double!
+        let description = json["weather"]["description"].string!
+        return WeatherForecast(temperature: temp, rainProbability: rainProbability!, location: location, wind: wind)
     }
     
     private func makeRequest(requestType: OpenWeatherMapGetRouter, completionHandler: @escaping (DataResponse<Any>) -> Void) {
