@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		085C0BB86DFFB903ADDDF659 /* Pods_Rainy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A16B4B155A0D521FF3EBE99 /* Pods_Rainy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7B69FB5CE728F9121E6E3F39 /* Pods_Rainy_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C298855D70E0E8FE19C392E0 /* Pods_Rainy_dev.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9C656DFC1DD248410096FDA5 /* ForecastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C656DFB1DD248410096FDA5 /* ForecastManager.swift */; };
+		9C656DFD1DD248A40096FDA5 /* ForecastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C656DFB1DD248410096FDA5 /* ForecastManager.swift */; };
 		9C84DB7F1DB53A590059E63B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB7E1DB53A590059E63B /* AppDelegate.swift */; };
 		9C84DB811DB53A590059E63B /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB801DB53A590059E63B /* CurrentWeatherViewController.swift */; };
 		9C84DB831DB53A590059E63B /* HomeWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84DB821DB53A590059E63B /* HomeWeatherViewController.swift */; };
@@ -40,6 +42,7 @@
 		753B26BE366B55572875C325 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7A16B4B155A0D521FF3EBE99 /* Pods_Rainy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBEDB30D3618E5A26D4188F /* Pods-Rainy-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainy-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rainy-dev/Pods-Rainy-dev.debug.xcconfig"; sourceTree = "<group>"; };
+		9C656DFB1DD248410096FDA5 /* ForecastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastManager.swift; sourceTree = "<group>"; };
 		9C84DB7B1DB53A590059E63B /* Rainy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C84DB7E1DB53A590059E63B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C84DB801DB53A590059E63B /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
@@ -105,12 +108,12 @@
 		9C84DB721DB53A590059E63B = {
 			isa = PBXGroup;
 			children = (
-				9C84DB7D1DB53A590059E63B /* Rainy */,
-				E135E6D010E252D6C144C8DC /* Podfile */,
-				E135E14A45138472A4BAB064 /* .gitignore */,
-				9C84DB7C1DB53A590059E63B /* Products */,
-				9B7040999D0A7EA737BF9449 /* Pods */,
 				61F7C40BEE77196306E6F312 /* Frameworks */,
+				9B7040999D0A7EA737BF9449 /* Pods */,
+				9C84DB7C1DB53A590059E63B /* Products */,
+				9C84DB7D1DB53A590059E63B /* Rainy */,
+				E135E14A45138472A4BAB064 /* .gitignore */,
+				E135E6D010E252D6C144C8DC /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,14 +129,14 @@
 		9C84DB7D1DB53A590059E63B /* Rainy */ = {
 			isa = PBXGroup;
 			children = (
-				9CC076BA1DB7F91A00887021 /* Models */,
 				9CC076B71DB7ECDA00887021 /* Controllers */,
 				9CC076B81DB7ED0100887021 /* Helpers */,
+				9CC076BA1DB7F91A00887021 /* Models */,
 				9CC076B91DB7ED2800887021 /* Stores */,
 				9C84DB7E1DB53A590059E63B /* AppDelegate.swift */,
-				9C84DB8C1DB53A590059E63B /* Info.plist */,
-				E135E9FCCBA7DC411128F112 /* Info-dev.plist */,
 				9CFA25931DB825A30071197C /* Images.xcassets */,
+				E135E9FCCBA7DC411128F112 /* Info-dev.plist */,
+				9C84DB8C1DB53A590059E63B /* Info.plist */,
 			);
 			path = Rainy;
 			sourceTree = "<group>";
@@ -145,24 +148,25 @@
 				9C84DB801DB53A590059E63B /* CurrentWeatherViewController.swift */,
 				9C84DB821DB53A590059E63B /* HomeWeatherViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9CC076B81DB7ED0100887021 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				E135E21E96D9A3944C56680D /* Constants.swift */,
+				9C656DFB1DD248410096FDA5 /* ForecastManager.swift */,
 			);
-			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9CC076B91DB7ED2800887021 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
-				9C84DB841DB53A590059E63B /* Main.storyboard */,
 				9C84DB891DB53A590059E63B /* LaunchScreen.storyboard */,
+				9C84DB841DB53A590059E63B /* Main.storyboard */,
 			);
-			name = Stores;
+			path = Stores;
 			sourceTree = "<group>";
 		};
 		9CC076BA1DB7F91A00887021 /* Models */ = {
@@ -170,7 +174,7 @@
 			children = (
 				E135E2C711B5E53AB8DAA921 /* WeatherForecast.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C656DFC1DD248410096FDA5 /* ForecastManager.swift in Sources */,
 				9CC076B61DB7EC9200887021 /* BaseWeatherViewController.swift in Sources */,
 				9C84DB831DB53A590059E63B /* HomeWeatherViewController.swift in Sources */,
 				9C84DB7F1DB53A590059E63B /* AppDelegate.swift in Sources */,
@@ -396,6 +401,7 @@
 			files = (
 				9CC076BB1DB7FBF500887021 /* BaseWeatherViewController.swift in Sources */,
 				9CF89D711DB61080007619E7 /* HomeWeatherViewController.swift in Sources */,
+				9C656DFD1DD248A40096FDA5 /* ForecastManager.swift in Sources */,
 				9CF89D721DB61080007619E7 /* AppDelegate.swift in Sources */,
 				9CF89D731DB61080007619E7 /* CurrentWeatherViewController.swift in Sources */,
 				9CF89D741DB61080007619E7 /* Constants.swift in Sources */,
@@ -412,6 +418,7 @@
 				9C84DB851DB53A590059E63B /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		9C84DB891DB53A590059E63B /* LaunchScreen.storyboard */ = {
@@ -420,6 +427,7 @@
 				9C84DB8A1DB53A590059E63B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
