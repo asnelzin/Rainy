@@ -87,8 +87,11 @@ class OpenWeatherMapForecastManager {
         }
         let location = json["name"].string!
         let wind = json["wind"]["speed"].double!
-        let description = json["weather"]["description"].string!
-        return WeatherForecast(temperature: temp, rainProbability: rainProbability!, location: location, wind: wind)
+        let description = json["weather"][0]["description"].string!
+        return WeatherForecast(
+                location: location, description: description,
+                temperature: temp, rainProbability: rainProbability!, wind: wind
+                )
     }
     
     private func makeRequest(requestType: OpenWeatherMapGetRouter, completionHandler: @escaping (DataResponse<Any>) -> Void) {

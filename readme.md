@@ -10,8 +10,11 @@ This application was made during iOS-course in VK.com University.
 - [x] Add https://openweathermap.org/ API
 - [x] Add pull-to-refresh
 - [x] Add LocationManager
-- [ ] Implement basic functionality
-- [ ] Improve design
+- [x] Implement basic functionality
+- [x] Improve design
+- [ ] Maybe recreate icons
+- [ ] Think about home screen
+- [ ] Refactor JSON parsing
 - [ ] Make an app icon
 - [ ] Add weekly forecast
 
