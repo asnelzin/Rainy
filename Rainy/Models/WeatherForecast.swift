@@ -25,7 +25,7 @@ class WeatherForecast {
         switch description {
         case "clear sky":
             self.image = #imageLiteral(resourceName: "sunny")
-        case "few clouds", "scattered clouds", "broken clouds", "mist":
+        case "few clouds", "scattered clouds", "broken clouds", "overcast clouds", "mist":
             self.image = #imageLiteral(resourceName: "cloudy")
         case "shower rain", "rain", "thunderstorm":
             self.image = #imageLiteral(resourceName: "rain")
