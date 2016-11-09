@@ -23,7 +23,7 @@ enum OpenWeatherMapGetRouter: URLRequestConvertible {
         case .GetWithCoordinates(let lat, let lon):
             return ["lat": lat, "lon": lon, "appid": Constants.apiKey, "units": "metric"]
         case .GetWithLocation(let location):
-            return ["location": location, "appid": Constants.apiKey]
+            return ["q": location, "appid": Constants.apiKey, "units": "metric"]
         }
     }
     
@@ -55,6 +55,7 @@ class OpenWeatherMapForecastManager {
             
             let responseJSON = JSON(response.result.value)
             print(responseJSON)
+            
             let temp = responseJSON["main"]["temp"].double!
             
             var rainProbability: Double?
@@ -63,12 +64,39 @@ class OpenWeatherMapForecastManager {
             } else {
                 rainProbability = -1
             }
-            let weatherForecast = WeatherForecast(temperature: temp, rainProbability: rainProbability!)
+            let location = responseJSON["name"].string!
+            let wind = responseJSON["wind"]["speed"].double!
+            let weatherForecast = WeatherForecast(temperature: temp, rainProbability: rainProbability!, location: location, wind: wind)
             self.delegate?.didUpdateForecast(self, forecast: weatherForecast)
         }
     }
     
-    func getHomeForecast(from: String) {}
+    func getHomeForecast(from: String) {
+        makeRequest(requestType: .GetWithLocation(from)) { response in
+            guard response.result.error == nil else {
+                // got an error in getting the data, need to handle it
+                print("Error calling API method!")
+                print(response.result.error!)
+                return
+            }
+            
+            let responseJSON = JSON(response.result.value)
+            print(responseJSON)
+            
+            let temp = responseJSON["main"]["temp"].double!
+            
+            var rainProbability: Double?
+            if let rainDict = responseJSON["rain"].dictionary {
+                rainProbability = rainDict["3h"]?.double
+            } else {
+                rainProbability = -1
+            }
+            let location = responseJSON["name"].string!
+            let wind = responseJSON["wind"]["speed"].double!
+            let weatherForecast = WeatherForecast(temperature: temp, rainProbability: rainProbability!, location: location, wind: wind)
+            self.delegate?.didUpdateForecast(self, forecast: weatherForecast)
+        }
+    }
     
     private func makeRequest(requestType: OpenWeatherMapGetRouter, completionHandler: @escaping (DataResponse<Any>) -> Void) {
         Alamofire

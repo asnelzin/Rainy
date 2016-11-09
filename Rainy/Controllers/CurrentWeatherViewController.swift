@@ -12,8 +12,6 @@ import CoreLocation
 
 
 class CurrentWeatherViewController: BaseWeatherViewController {
-    var coordinates = Coordinates()
-    
     lazy var locationManager: CLLocationManager = {
         let locationManager = CLLocationManager()
         locationManager.delegate = self
@@ -34,7 +32,7 @@ class CurrentWeatherViewController: BaseWeatherViewController {
         super.viewDidLoad()
         
         scrollView.insertSubview(refreshControl, at: 0)
-        locationManager.requestLocation()
+        update()
     }
 }
 
@@ -42,12 +40,15 @@ class CurrentWeatherViewController: BaseWeatherViewController {
 // MARK: - Update
 extension CurrentWeatherViewController {
     override func updateCurrentForecast() {
-        forecastManager.getCurrentLocationForecast(latitude: coordinates.latitude, longitude: coordinates.longitude)
+        locationManager.requestLocation()
     }
 
     override func updateUI() {
+        locationLabel.text = currentForecast!.location
+        
         tempLabel.text = "\(round(currentForecast!.temperature))"
         rainLabel.text = "\(round(currentForecast!.rainProbability))"
+        windLabel.text = "\(round(currentForecast!.wind))"
     }
 }
 
@@ -60,11 +61,10 @@ extension CurrentWeatherViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("Get locations")
-        let currentLocation: CLLocation = locations[0] // TODO: Unsafe
-        if (!currentLocation.isEqual(nil)) { // == nil
-            coordinates = Coordinates(
-                latitude: currentLocation.coordinate.latitude,
-                longitude: currentLocation.coordinate.longitude
+        if let location = locations.first {
+            forecastManager.getCurrentLocationForecast(
+                latitude: location.coordinate.latitude,
+                longitude: location.coordinate.longitude
             )
         }
     }

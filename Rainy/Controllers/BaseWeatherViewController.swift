@@ -28,10 +28,6 @@ class BaseWeatherViewController: UIViewController {
         forecastManager.delegate = self
         return forecastManager
     }()
-    
-    override func viewDidLoad() {
-        update()
-    }
 }
 
 

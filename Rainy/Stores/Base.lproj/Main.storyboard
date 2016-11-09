@@ -222,7 +222,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home-50" id="cPa-gy-q4n" userLabel="Home TabItem"/>
                     <connections>
+                        <outlet property="locationLabel" destination="nx1-Wc-nhw" id="HzZ-jI-w7Q"/>
+                        <outlet property="rainLabel" destination="uL1-kl-vqc" id="EKi-Qj-cKN"/>
                         <outlet property="scrollView" destination="yZ8-B9-rJQ" id="xRG-eI-zxG"/>
+                        <outlet property="tempLabel" destination="J3y-7Y-xdD" id="03O-PX-iMv"/>
+                        <outlet property="weatheImage" destination="Thd-R2-Q7a" id="8hK-gi-8P8"/>
+                        <outlet property="windLabel" destination="CW8-gs-n1i" id="vUF-Xk-JM3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

@@ -6,18 +6,9 @@
 import Foundation
 
 
-struct Coordinates {
-    var latitude = 0.0
-    var longitude = 0.0
-}
-
-
-class WeatherForecast {
+struct WeatherForecast {
     let temperature: Double
     let rainProbability: Double
-
-    init(temperature: Double, rainProbability: Double) {
-        self.temperature = temperature
-        self.rainProbability = rainProbability
-    }
+    let location: String
+    let wind: Double
 }
